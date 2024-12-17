@@ -2,7 +2,7 @@
   <button>
     <!-- Concatenating the user images folder path to match the users data images -->
     <img
-      [src]="'assets/users/' + selectedUser.avatar"
+      [src]="imagePath"
       [alt]="selectedUser.name"
     />
     <span>{{ selectedUser.name }}</span>
