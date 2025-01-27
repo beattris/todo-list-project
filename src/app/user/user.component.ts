@@ -1,8 +1,4 @@
-import { Component, computed, signal } from '@angular/core';
-import { DUMMY_USERS } from '../dummy-users';
-
-// logic to generate a random index that is within the DUMMY_USERS array.
-const randonIndex = Math.floor(Math.random() * DUMMY_USERS.length);
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -11,18 +7,14 @@ const randonIndex = Math.floor(Math.random() * DUMMY_USERS.length);
   styleUrl: './user.component.css',
 })
 export class UserComponent {
-  selectedUser = signal(DUMMY_USERS[randonIndex]);
-  // how to get the imagePath, now that a signal is used for the state
-  imagePath = computed(() => 'assets/users/' + this.selectedUser().avatar);
+  @Input() avatar!: string;
+  @Input() name!: string;
 
-  // Used a getter to concatenate the user images folder path to match the users data images
-  // get imagePath() {
-  //   return 'assets/users/' + this.selectedUser.avatar;
-  // }
+  get imagePath() {
+    return 'assets/users/' + this.avatar;
+  }
 
   onSelectUser() {
-    const randonIndex = Math.floor(Math.random() * DUMMY_USERS.length);
-    // setting the signal
-    this.selectedUser.set(DUMMY_USERS[randonIndex]);
+
   }
 }
