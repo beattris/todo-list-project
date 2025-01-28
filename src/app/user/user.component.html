@@ -3,9 +3,9 @@
     <!-- Concatenating the user images folder path to match the users data images -->
      <!-- imagePath is executed as a function because it is now of type signal -->
     <img
-      [src]="imagePath"
-      [alt]="name"
+      [src]="imagePath()"
+      [alt]="name()"
     />
-    <span>{{ name }}</span>
+    <span>{{ name() }}</span>
   </button>
 </div>
