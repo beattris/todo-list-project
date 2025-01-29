@@ -20,6 +20,7 @@ export class UserComponent {
 
   //  USING OBJECT AS AN INPUT TYPE TO ACCEPT ALL USER DETAILS AT ONCE
   @Input({ required: true }) user!: User;
+  @Input({ required: true }) selected!: boolean;
   @Output() select = new EventEmitter();
 
   get imagePath() {
