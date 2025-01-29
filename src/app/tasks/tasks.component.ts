@@ -16,26 +16,19 @@ export class TasksComponent {
   @Input({ required: true }) name!: string;
   isAddingTask = false;
 
-  constructor(private taskService: TasksService){}
+  constructor(private taskService: TasksService) {}
 
   get selectedUserTasks() {
     return this.taskService.getUserTasks(this.userId);
   }
 
-  onCompleteTask(id: string) {
-    
-  }
+  onCompleteTask(id: string) {}
 
   onStartAddTask() {
     this.isAddingTask = true;
   }
 
-  onCancelAddTask() {
-    this.isAddingTask = false;
-  }
-
-  onAddTask(taskData: NewTaskData){
-    
+  onCloseAddTask() {
     this.isAddingTask = false;
   }
 }
