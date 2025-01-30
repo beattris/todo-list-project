@@ -1,27 +1,22 @@
-# Essentials
+# Easy Task - A task management app.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.1.2.
+![Home view of Easy Task](./src/assets/easy%20task.png)
 
-## Development server
+## Welcome! 👋
+This is a refresher course project. It is a task management app that allows one to view and assign task to different users. During this course project, I reinforced my knowledge of major ng concepts like Components, Databinding, Directives, Services & dependency injection, Routing, Observables, Forms, Pipes, and much more! I also implemented some of the newer angular features, like **signals**!
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## How To Run? 🤔
+Download this code either as a `zip file` or use the `git clone` command to clone it.
+Then, open the project folder in your editor and on the integrated terminal:
+-  Run `npm install` to install all the packages used for this project.
+After the installation,
+- Run `ng serve` to run the project on your browser localhost.
+    That's all you'd need to do 🙂
 
-## Code scaffolding
+## Want To Contribute? 
+Feel free to open a pull request on this repository is there's any feature you'd like to add to this app!
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Have A Feedback? 
+Giving feedback is appreciated, if you any to give on this project please let me know at beatriceebirim@gmail.com.
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+**Happy Coding 💪**
